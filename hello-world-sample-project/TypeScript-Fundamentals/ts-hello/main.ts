@@ -1,36 +1,20 @@
-// datatypes in TypeScript
+// Type Assertions
+// Type Assertions --> explictly telling the complier the type of a varible
 
-//type annotations in TypeScript --> (ex: let a: number; )
-// with type annotations you are defining the datatype of a variable --> let a: number;
+// Assigns message as an 'any' datatype varible when varible is not defined
+let message;
 
-let a: number;
-a = 1;
-// a = true;
-// a = 'a';
+// assigns message to a String DataType
+message = 'abc';
 
-/*
-  DataTypes allowed in TypeScript (
-  number,
-  boolean,
-  string,
-  any,
-  number[] --> (Number Array),
-  any[] --> (Any Array --> can add any data type can be placed in this Array)
-)
-*/
+// .endsWith(STRING) works with only strings types and Not an Object with type 'any'
+// <string> explictly tells the TypeScript complier that the varible is a "string" DataType
 
-// let a:  number;
-let b: boolean;
-let c: string;
-let d: any;
-let e: number[] = [1,2,3];
-let f: any[] = [1, true, 'a', false];
+// option 1 for type assertion: (<string> message)
+// option 2 for type assertion: (message as string)
 
-const ColorRed = 0;
-const ColorGreen = 1;
-const ColorBlue = 2;
+// option 1
+let endsWithC = (<string>message).endsWith('c');
 
-/* Enumering allow to create a container for related constants (const)  */
-/* Enumering in TypeScript is compiled into a differ format in JavaScript */
-enum Color { Red = 0, Green = 1, Blue = 2, Purple = 3 }
-let backgroundColor = Color.Red;
+// option 2
+let alternativeWay = (message as string).endsWith('c');
