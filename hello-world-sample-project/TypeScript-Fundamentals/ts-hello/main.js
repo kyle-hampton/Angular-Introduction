@@ -1,6 +1,8 @@
-// Basic javascript code
-function log(message) {
-    console.log(message);
+// Var vs. Let varibles
+function doSomething() {
+    for (var i = 0; i < 5; i++) {
+        console.log(i);
+    }
+    console.log('Finally: ' + i);
 }
-var message = 'Hello World';
-log(message);
+doSomething();
