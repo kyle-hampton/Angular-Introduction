@@ -1,9 +1,14 @@
-// Basic javascript code
+// Var vs. Let varibles
 
-function log(message) {
-    console.log(message)
+function doSomething() {
+  for (let i = 0; i < 5; i++){
+    console.log(i);
+  }
+
+  console.log('Finally: ' + i);
 }
 
-var message = 'Hello World';
+doSomething();
 
-log(message);
+//TypeScript will complie errors in the tsc main.ts
+// but still return valid javaScript code in main.js
