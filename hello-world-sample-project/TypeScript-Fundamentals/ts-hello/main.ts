@@ -10,6 +10,13 @@ class Point {
     x: number;
     y: number;
 
+    // Constructors are methods that are called when the instance of a class called
+    // Unlike java and C# you can only need one constructor
+    construtor(x?: number, y?: number){
+      this.x = x;
+      this.y = y;
+    }
+
     // Methods
     draw(){
       // to pull properties into a method use the "this.[VARIABLENAMEHERE]"
@@ -24,6 +31,4 @@ class Point {
 // This is an Objects --> new Point();
 // this Object is assigned to a varible named 'point'
 let point = new Point();
-point.x = 1;
-point.y = 2;
 point.draw();
