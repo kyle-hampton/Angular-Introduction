@@ -1,8 +1,12 @@
-// arrow-functions in TypeScript
-// Arrow Functions allow for shorter and cleaner fucntion code
-// Normal Function
-var log = function (message) {
-    console.log(message);
+// Interfaces / Creating customs types in TypeScript
+var drawPoint = function (point) {
+    //...
 };
-// Arrow Function
-var doLog = function (message) { return console.log(message); };
+var getDistance = function (pointA, pointB) {
+    //..
+};
+draw;
+point({
+    x: 1,
+    y: 2
+});
