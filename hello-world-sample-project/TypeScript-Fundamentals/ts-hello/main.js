@@ -6,6 +6,13 @@
 var Point = /** @class */ (function () {
     function Point() {
     }
+    // Constructors are methods that are called when the instance of a class called
+    // Unlike java and C# you can only need one constructor
+    // '?' symbol
+    Point.prototype.construtor = function (x, y) {
+        this.x = x;
+        this.y = y;
+    };
     // Methods
     Point.prototype.draw = function () {
         // to pull properties into a method use the "this.[VARIABLENAMEHERE]"
@@ -19,6 +26,4 @@ done through the "new ClassNameHere()" */
 // This is an Objects --> new Point();
 // this Object is assigned to a varible named 'point'
 var point = new Point();
-point.x = 1;
-point.y = 2;
 point.draw();

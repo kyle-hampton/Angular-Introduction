@@ -12,6 +12,7 @@ class Point {
 
     // Constructors are methods that are called when the instance of a class called
     // Unlike java and C# you can only need one constructor
+    // '?' symbol
     construtor(x?: number, y?: number){
       this.x = x;
       this.y = y;
