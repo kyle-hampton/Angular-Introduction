@@ -4,7 +4,9 @@
 // Functions in a Class are called "Methods"
 //This is a Class
 var Point = /** @class */ (function () {
-    function Point() {
+    function Point(x, y) {
+        this.x = x;
+        this.y = y;
     }
     // Methods
     Point.prototype.draw = function () {
@@ -18,7 +20,5 @@ done through the "new ClassNameHere()" */
 // Classes create new instances of Objects
 // This is an Objects --> new Point();
 // this Object is assigned to a varible named 'point'
-var point = new Point();
-point.x = 1;
-point.y = 2;
+var point = new Point(1, 2);
 point.draw();
