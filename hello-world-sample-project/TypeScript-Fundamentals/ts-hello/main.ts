@@ -17,6 +17,7 @@ class Point {
     }
 }
 
+
  /* To create an instance of a class you have to allocate memory space this is
  done through the "new ClassNameHere()" */
  // Classes create new instances of Objects
