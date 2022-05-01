@@ -6,15 +6,18 @@
 
 //This is a Class
 class Point {
+
     // Properties
+
     // Access Modifers (public, private, protected)
     // Access Modifiers --> Are key words that add you can add to a memeber of a class to control its Access from the outside
-    private x: number;
-    private y: number;
+    // private x: number;
+    // private y: number;
 
-    constructor(x?: number, y?: number){
-      this.x = x;
-      this.y = y;
+    // Access modifiers can be added to constructor parameters
+    // The TypeScript compiler is used to generate and init
+
+    constructor(private x?: number, private y?: number){
     }
 
     // Methods

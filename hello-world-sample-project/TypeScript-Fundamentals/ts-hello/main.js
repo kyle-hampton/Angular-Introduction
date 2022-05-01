@@ -4,6 +4,13 @@
 // Functions in a Class are called "Methods"
 //This is a Class
 var Point = /** @class */ (function () {
+    // Properties
+    // Access Modifers (public, private, protected)
+    // Access Modifiers --> Are key words that add you can add to a memeber of a class to control its Access from the outside
+    // private x: number;
+    // private y: number;
+    // Access modifiers can be added to constructor parameters
+    // The TypeScript compiler is used to generate and init
     function Point(x, y) {
         this.x = x;
         this.y = y;
